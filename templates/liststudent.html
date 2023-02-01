@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Student</title>
+</head>
+<body>
+
+        <h1>List Of Student</h1> <br><br>
+         <a href="/">HOME</a><br><br>
+
+        table border="1">
+                    <thead>
+                    <th>Student rollno </th>    <th>Student Name </th>    <th>Student Address </th>    <th>Student Mobile </th>    <th>Student Email </th>   <th>Student Dept </th> <th>Student Fees </th><th>Action</th>
+            </thead>
+
+        <tbody>
+
+            {% for stud in slist %}
+            <tr>
+                <td>{{stud.no}}</td>
+                <td>{{stud.name}}</td>
+                <td>{{stud.Address}}</td>
+                <td>{{stud.mobile}}</td>
+                <td>{{stud.email}}</td>
+                <td>{{stud.dept}}</td>
+                <td>{{stud.fees}}</td>
+
+                <td><a href="/stud-delete/{{stud.no}}"> DELETE </a></td>
+
+
+
+            </tr>
+            {% endfor %}
+</tbody>
+
+
+
+        </table>
+
+
+</body>
+</html>
+
+</body>
+</html>

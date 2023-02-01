@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+</head>
+<body>
+        <h1>add Student</h1>
+        <a href="/">HOME</a><br><br>
+        <font color="green"> {{message}}</font><
+        {% for item in smessage %}
+            <font color="red"> {{item}}</font> <br>
+        {% endfor %}
+        <form action="/stud-save" method="post">
+
+            Student roll: <input type="text" name="rno" /> <br><br>
+            Student Name : <input type="text" name="sname" /> <br><br>
+            Student Address : <input type="text" name="saddress" /> <br><br>
+            Student Mobile : <input type="text" name="smobile" /><br><br>
+            student Email : <input type="text" name="semail" /><br><br>
+            student Department :<select name="sdept">
+                                <option value="CHE"> Chemical Engineer</option>
+                                 <option value="CE"> Civil Engineer</option>
+                                 <option value="ME"> Mechanical Engineer</option>
+                                 <option value="CS"> computer science</option>
+            </select><br><br>
+            Student fees : <input type="text" name="sfees" /> <br><br>
+            <input type="submit">
+        </form>
+
+</body>
+</html>
